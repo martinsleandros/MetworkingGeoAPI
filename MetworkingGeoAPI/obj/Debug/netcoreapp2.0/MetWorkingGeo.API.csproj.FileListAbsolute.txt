@@ -1,0 +1,16 @@
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\MetWorkingGeo.API.deps.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\MetWorkingGeo.API.runtimeconfig.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\MetWorkingGeo.API.runtimeconfig.dev.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\MetWorkingGeo.API.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\MetWorkingGeo.API.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.AssemblyInfoInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.AssemblyInfo.cs
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\obj\Debug\netcoreapp2.0\MetWorkingGeo.API.genruntimeconfig.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\snappy32.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\snappy64.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeoAPI\bin\Debug\netcoreapp2.0\libzstd.dll
