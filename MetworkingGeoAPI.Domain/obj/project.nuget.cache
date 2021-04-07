@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EVqmpZezysR7Ij+MvJtS5E2aaOwi4P8eLaQ7GVaapW0yI5KYJm4Ger3Z5WC/LdG/jAquUuTWyB1mbH390gIoxQ==",
+  "success": true,
+  "projectFilePath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeoAPI.Domain/MetworkingGeoAPI.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/caio/.nuget/packages/mongodb.bson/2.12.2/mongodb.bson.2.12.2.nupkg.sha512",
+    "/home/caio/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

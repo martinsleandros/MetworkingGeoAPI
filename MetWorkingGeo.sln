@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetWorkingGeo.API", "DesenvolvimentoWeb.WebAPI\MetWorkingGeo.API.csproj", "{10D64684-2F0C-4268-AD0B-9399D9B5C50B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetWorkingGeo.WorkerService", "MetWorkingGeo.WorkerService\MetWorkingGeo.WorkerService.csproj", "{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetWorkingGeo.Infra", "MetWorkingGeo.Infra\MetWorkingGeo.Infra.csproj", "{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Presentation", "MetworkingGeo.Presentation\MetworkingGeo.Presentation.csproj", "{D9807331-4874-4529-B3DD-00B52FC60934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeoAPI.Domain", "MetworkingGeoAPI.Domain\MetworkingGeoAPI.Domain.csproj", "{476CCC08-37FF-49A4-BA7E-3BED058EA21E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{10D64684-2F0C-4268-AD0B-9399D9B5C50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10D64684-2F0C-4268-AD0B-9399D9B5C50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10D64684-2F0C-4268-AD0B-9399D9B5C50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10D64684-2F0C-4268-AD0B-9399D9B5C50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9807331-4874-4529-B3DD-00B52FC60934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9807331-4874-4529-B3DD-00B52FC60934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9807331-4874-4529-B3DD-00B52FC60934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9807331-4874-4529-B3DD-00B52FC60934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
