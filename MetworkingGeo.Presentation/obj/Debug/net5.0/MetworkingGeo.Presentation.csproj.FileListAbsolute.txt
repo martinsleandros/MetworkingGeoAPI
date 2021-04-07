@@ -43,3 +43,5 @@
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/ref/MetworkingGeo.Presentation.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.pdb
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.genruntimeconfig.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Application.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Application.pdb

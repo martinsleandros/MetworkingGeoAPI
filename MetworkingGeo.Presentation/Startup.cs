@@ -1,4 +1,5 @@
 using MetWorkingGeo.Infra;
+using MetworkingGeoAPI.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,7 @@ namespace MetworkingGeo.Presentation
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "MetworkingGeo.Presentation", Version = "v1"});
             });
+            services.AddServices();
             services.AddMongoRepository();
         }
 

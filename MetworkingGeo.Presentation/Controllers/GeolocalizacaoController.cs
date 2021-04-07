@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MetWorkingGeo.Infra.Interfaces;
+using MetworkingGeoAPI.Application.Interfaces;
 using MetworkingGeoAPI.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
@@ -11,11 +13,11 @@ namespace MetworkingGeo.Presentation.Controllers
     [Route("[controller]")]
     public class GeolocalizacaoController
     {
-        private readonly IDbGeolocalizacaoMongodb _mongoContext;
+        private readonly IGeoLocalizacaoService _geoLocalizacaoService;
 
-        public GeolocalizacaoController(IDbGeolocalizacaoMongodb mongodb)
+        public GeolocalizacaoController(IGeoLocalizacaoService geoLocalizacaoService)
         {
-            _mongoContext = mongodb;
+            _geoLocalizacaoService = geoLocalizacaoService;
         }
 
         [HttpGet]
@@ -23,7 +25,7 @@ namespace MetworkingGeo.Presentation.Controllers
         {
             IEnumerable<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
 
-            lLstGeolocalizacao = _mongoContext.GetContext().Find(x => true).ToList();
+            lLstGeolocalizacao = _geoLocalizacaoService.GetAll();
 
             return lLstGeolocalizacao;
         }
@@ -33,7 +35,7 @@ namespace MetworkingGeo.Presentation.Controllers
         {
             List<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
 
-            lLstGeolocalizacao = _mongoContext.GetContext().Find(x => x.idUser.Equals(idUser)).ToList();
+            lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
 
             return lLstGeolocalizacao;
         }
@@ -41,7 +43,7 @@ namespace MetworkingGeo.Presentation.Controllers
         [HttpPost]
         public void Post([FromBody]Geolocalizacao pGeo)
         {
-            _mongoContext.GetContext().InsertOne(pGeo);
+            _geoLocalizacaoService.Add(pGeo);
         }
     }
 }

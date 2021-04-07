@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Presentation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeoAPI.Domain", "MetworkingGeoAPI.Domain\MetworkingGeoAPI.Domain.csproj", "{476CCC08-37FF-49A4-BA7E-3BED058EA21E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeoAPI.Application", "MetworkingGeoAPI.Application\MetworkingGeoAPI.Application.csproj", "{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476CCC08-37FF-49A4-BA7E-3BED058EA21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

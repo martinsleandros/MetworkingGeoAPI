@@ -258,6 +258,19 @@
           "bin/placeholder/MetWorkingGeo.Infra.dll": {}
         }
       },
+      "MetworkingGeoAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MetWorkingGeo.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MetworkingGeoAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MetworkingGeoAPI.Application.dll": {}
+        }
+      },
       "MetworkingGeoAPI.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -657,6 +670,11 @@
       "path": "../MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj",
       "msbuildProject": "../MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj"
     },
+    "MetworkingGeoAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj",
+      "msbuildProject": "../MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj"
+    },
     "MetworkingGeoAPI.Domain/1.0.0": {
       "type": "project",
       "path": "../MetworkingGeoAPI.Domain/MetworkingGeoAPI.Domain.csproj",
@@ -665,7 +683,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "MetWorkingGeo.Infra >= 1.0.0",
+      "MetworkingGeoAPI.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -694,8 +712,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/caio/Documents/MetworkingGeoAPI/MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj": {
-              "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj"
+            "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj": {
+              "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj"
             }
           }
         }
