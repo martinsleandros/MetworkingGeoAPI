@@ -7,9 +7,10 @@ namespace MetworkingGeoAPI.Application.Interfaces
 {
     public interface IGeoLocalizacaoService
     {
-        public IEnumerable<Geolocalizacao> GetAll();
+        public IEnumerable<Geolocalizacao> GetAll(int page);
         public IEnumerable<Geolocalizacao> GetById(Guid idUser);
         public Task Add(LocationEntry pGeo);
-        public Task<IEnumerable<Geolocalizacao>> FindNear(LocationEntry loc);
+        public Task<IEnumerable<Guid>> FindNear(LocationEntry loc);
+        public Task<long> GetCount();
     }
 }

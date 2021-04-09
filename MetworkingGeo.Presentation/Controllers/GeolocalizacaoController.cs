@@ -2,11 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MetWorkingGeo.Infra.Interfaces;
 using MetworkingGeoAPI.Application.Interfaces;
 using MetworkingGeoAPI.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
 
 namespace MetworkingGeo.Presentation.Controllers
 {
@@ -22,11 +20,11 @@ namespace MetworkingGeo.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] int page)
         {
             IEnumerable<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
 
-            lLstGeolocalizacao = _geoLocalizacaoService.GetAll();
+            lLstGeolocalizacao = _geoLocalizacaoService.GetAll(page);
 
             return Ok(lLstGeolocalizacao);
         }

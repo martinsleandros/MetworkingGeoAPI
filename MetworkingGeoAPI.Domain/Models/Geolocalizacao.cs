@@ -8,6 +8,7 @@ namespace MetworkingGeoAPI.Domain.Models
     {
         [BsonId]
         public Guid id { get; set; }
+        [BsonElement("idUser")]
         public Guid idUser { get; set; }
 
         public DateTime date { get; set; }

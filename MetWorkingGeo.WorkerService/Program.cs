@@ -1,3 +1,5 @@
+using MetWorkingGeo.Infra;
+using MetworkingGeoAPI.Application;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -15,6 +17,8 @@ namespace MetWorkingGeo.WorkerService
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
+                    services.AddServices();
+                    services.AddMongoRepository();
                 });
     }
 }
