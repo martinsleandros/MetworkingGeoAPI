@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using MetWorkingGeo.Infra.Interfaces;
 using MetworkingGeoAPI.Application.Interfaces;
 using MetworkingGeoAPI.Domain.Models;
@@ -11,7 +12,7 @@ namespace MetworkingGeo.Presentation.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GeolocalizacaoController
+    public class GeolocalizacaoController : ControllerBase
     {
         private readonly IGeoLocalizacaoService _geoLocalizacaoService;
 
@@ -21,13 +22,13 @@ namespace MetworkingGeo.Presentation.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Geolocalizacao> GetAll()
+        public async Task<IActionResult> GetAll()
         {
             IEnumerable<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
 
             lLstGeolocalizacao = _geoLocalizacaoService.GetAll();
 
-            return lLstGeolocalizacao;
+            return Ok(lLstGeolocalizacao);
         }
 
         [HttpGet("{idUser}", Name = "GetById")]
@@ -41,9 +42,16 @@ namespace MetworkingGeo.Presentation.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody]Geolocalizacao pGeo)
+        public async void Post([FromBody]LocationEntry pGeo)
         {
-            _geoLocalizacaoService.Add(pGeo);
+            await _geoLocalizacaoService.Add(pGeo);
+        }
+        
+        [HttpPost("/near")]
+        public async Task<IActionResult> GetNear([FromBody]LocationEntry pGeo)
+        {
+            var result = await _geoLocalizacaoService.FindNear(pGeo);
+            return Ok(result);
         }
     }
 }

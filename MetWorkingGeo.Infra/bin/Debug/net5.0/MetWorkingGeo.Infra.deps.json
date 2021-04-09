@@ -129,7 +129,8 @@
       },
       "MetworkingGeoAPI.Domain/1.0.0": {
         "dependencies": {
-          "MongoDB.Bson": "2.12.2"
+          "MongoDB.Bson": "2.12.2",
+          "MongoDB.Driver": "2.12.2"
         },
         "runtime": {
           "MetworkingGeoAPI.Domain.dll": {}

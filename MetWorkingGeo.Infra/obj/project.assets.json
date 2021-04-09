@@ -182,7 +182,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "MongoDB.Bson": "2.12.2"
+          "MongoDB.Bson": "2.12.2",
+          "MongoDB.Driver": "2.12.2"
         },
         "compile": {
           "bin/placeholder/MetworkingGeoAPI.Domain.dll": {}
