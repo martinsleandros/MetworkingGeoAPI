@@ -124,7 +124,7 @@
           "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -609,7 +609,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "MetworkingGeo.Infra": "1.0.0"
+          "MetworkingGeo.Infra": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "compile": {
           "bin/placeholder/MetworkingGeo.Application.dll": {}
@@ -637,6 +638,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "MetworkingGeo.Domain": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "MongoDB.Bson": "2.12.2",
           "MongoDB.Driver": "2.12.2",
           "MongoDB.Driver.Core": "2.12.2"
@@ -837,10 +839,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.0": {
-      "sha512": "Rc2kb/p3Ze6cP6rhFC3PJRdWGbLvSHZc0ev7YlyeU6FmHciDMLrhoVoTUEzKPhN5ZjFgKF1Cf5fOz8mCMIkvpA==",
+    "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/5.0.0",
+      "path": "microsoft.extensions.dependencyinjection/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -855,7 +857,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1640,32 +1642,44 @@
     ]
   },
   "packageFolders": {
-    "/home/caio/.nuget/packages/": {}
+    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj",
+      "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj",
       "projectName": "MetworkingGeo.WorkerService",
-      "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj",
-      "packagesPath": "/home/caio/.nuget/packages/",
-      "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/obj/",
+      "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj",
+      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/caio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj": {
-              "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj"
+            "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj": {
+              "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj"
             }
           }
         }
@@ -1700,7 +1714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

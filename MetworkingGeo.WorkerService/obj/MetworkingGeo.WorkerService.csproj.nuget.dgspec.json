@@ -1,33 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj": {}
+    "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj": {}
   },
   "projects": {
-    "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj": {
+    "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj",
         "projectName": "MetworkingGeo.Application",
-        "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj",
-        "packagesPath": "/home/caio/.nuget/packages/",
-        "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/obj/",
+        "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/caio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/MetworkingGeo.Infra.csproj": {
-                "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/MetworkingGeo.Infra.csproj"
+              "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\MetworkingGeo.Infra.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\MetworkingGeo.Infra.csproj"
               }
             }
           }
@@ -41,6 +50,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,26 +71,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj": {
+    "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj",
         "projectName": "MetworkingGeo.Domain",
-        "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
-        "packagesPath": "/home/caio/.nuget/packages/",
-        "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/",
+        "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/caio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,34 +142,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/MetworkingGeo.Infra.csproj": {
+    "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\MetworkingGeo.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/MetworkingGeo.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\MetworkingGeo.Infra.csproj",
         "projectName": "MetworkingGeo.Infra",
-        "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/MetworkingGeo.Infra.csproj",
-        "packagesPath": "/home/caio/.nuget/packages/",
-        "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/",
+        "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\MetworkingGeo.Infra.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/caio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj": {
-                "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj"
+              "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj"
               }
             }
           }
@@ -160,6 +193,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.12.2, )"
@@ -188,34 +225,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj": {
+    "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj",
         "projectName": "MetworkingGeo.WorkerService",
-        "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/MetworkingGeo.WorkerService.csproj",
-        "packagesPath": "/home/caio/.nuget/packages/",
-        "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.WorkerService/obj/",
+        "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\MetworkingGeo.WorkerService.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.WorkerService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/caio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj": {
-                "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj"
+              "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Application\\MetworkingGeo.Application.csproj"
               }
             }
           }
@@ -250,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

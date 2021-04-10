@@ -450,24 +450,36 @@
     ]
   },
   "packageFolders": {
-    "/home/caio/.nuget/packages/": {}
+    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj",
       "projectName": "MetworkingGeo.Domain",
-      "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
-      "packagesPath": "/home/caio/.nuget/packages/",
-      "outputPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/",
+      "projectPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj",
+      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/caio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -510,7 +522,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

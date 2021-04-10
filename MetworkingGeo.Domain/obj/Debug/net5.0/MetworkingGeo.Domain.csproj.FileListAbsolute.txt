@@ -10,3 +10,15 @@
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/ref/MetworkingGeo.Domain.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\bin\Debug\net5.0\MetworkingGeo.Domain.deps.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\bin\Debug\net5.0\MetworkingGeo.Domain.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\bin\Debug\net5.0\ref\MetworkingGeo.Domain.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\bin\Debug\net5.0\MetworkingGeo.Domain.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.csprojAssemblyReference.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.AssemblyInfoInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.AssemblyInfo.cs
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\ref\MetworkingGeo.Domain.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Domain\obj\Debug\net5.0\MetworkingGeo.Domain.pdb

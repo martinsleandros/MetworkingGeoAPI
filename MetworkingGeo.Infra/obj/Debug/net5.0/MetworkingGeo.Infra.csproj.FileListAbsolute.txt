@@ -15,3 +15,21 @@
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/ref/MetworkingGeo.Infra.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.csprojAssemblyReference.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.AssemblyInfoInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.AssemblyInfo.cs
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\ref\MetworkingGeo.Infra.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\snappy32.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\snappy64.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\libzstd.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\MetworkingGeo.Infra.deps.json
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\MetworkingGeo.Infra.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\ref\MetworkingGeo.Infra.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\MetworkingGeo.Infra.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\MetworkingGeo.Domain.dll
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\bin\Debug\net5.0\MetworkingGeo.Domain.pdb
+C:\Users\Leandro\source\repos\MBA\ENGINEERING SOFTWARE DEVELOPMENT\MetworkingGeoAPI\MetworkingGeo.Infra\obj\Debug\net5.0\MetworkingGeo.Infra.csproj.CopyComplete
