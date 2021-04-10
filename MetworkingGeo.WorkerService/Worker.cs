@@ -23,7 +23,8 @@ namespace MetWorkingGeo.WorkerService
             while (!stoppingToken.IsCancellationRequested)
             {
                 var total = await _service.GetCount();
-                var totalToReturn = 100;
+                const int totalToReturn = 100;
+                var totalPages = total / totalToReturn;
                 var all = await _service.GetAll(_offset, totalToReturn);
 
                 foreach (var position in all)
@@ -37,6 +38,15 @@ namespace MetWorkingGeo.WorkerService
                     };
                     
                     var near = await _service.FindNearWorker(location);
+                }
+
+                if (_offset > totalPages)
+                {
+                    _offset = 0;
+                }
+                else
+                {
+                    _offset += 1;
                 }
                 
                 await Task.Delay(1000, stoppingToken);
