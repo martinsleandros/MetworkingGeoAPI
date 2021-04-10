@@ -9,6 +9,7 @@ namespace MetworkingGeoAPI.Application
         public static void AddServices(this IServiceCollection services)
         {
             services.AddSingleton<IGeoLocalizacaoService, GeoLocalizacaoService>();
+            services.AddSingleton<ITimelineService, TimelineService>();
         }
     }
 }
