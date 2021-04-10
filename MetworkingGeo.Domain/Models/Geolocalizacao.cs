@@ -7,11 +7,11 @@ namespace MetworkingGeoAPI.Domain.Models
     public class Geolocalizacao
     {
         [BsonId]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
         [BsonElement("idUser")]
-        public Guid idUser { get; set; }
-        [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
-        public DateTime date { get; set; }
+        public Guid IdUser { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime CreatedDate { get; set; }
 
         [BsonElement("location")]
         public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location { get; set; }

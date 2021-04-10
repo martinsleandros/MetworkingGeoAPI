@@ -1,7 +1,7 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using MetworkingGeoAPI.Application.Interfaces;
+using MetworkingGeoAPI.Domain.Models;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -23,9 +23,22 @@ namespace MetWorkingGeo.WorkerService
             while (!stoppingToken.IsCancellationRequested)
             {
                 var total = await _service.GetCount();
-                var all = _service.GetAll(_offset, 100);
-                _logger.LogInformation($"Worker running. Offset is: {_offset.ToString()}", DateTimeOffset.Now);
-                _offset += 1;
+                var totalToReturn = 100;
+                var all = await _service.GetAll(_offset, totalToReturn);
+
+                foreach (var position in all)
+                {
+                    var location = new LocationEntry()
+                    {
+                        Latitude = position.Location.Coordinates.Latitude,
+                        Longitude = position.Location.Coordinates.Longitude,
+                        DateTime = position.Date,
+                        UserId = position.IdUser
+                    };
+                    
+                    var near = await _service.FindNearWorker(location);
+                }
+                
                 await Task.Delay(1000, stoppingToken);
             }
         }

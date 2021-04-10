@@ -11,6 +11,7 @@ namespace MetworkingGeoAPI.Application.Interfaces
         public IEnumerable<Geolocalizacao> GetById(Guid idUser);
         public Task Add(LocationEntry pGeo);
         public Task<IEnumerable<Guid>> FindNear(LocationEntry loc);
+        public Task<IEnumerable<Guid>> FindNearWorker(LocationEntry loc);
         public Task<long> GetCount();
     }
 }
