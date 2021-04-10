@@ -9,7 +9,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MetworkingGeoAPI.Application\MetworkingGeoAPI.Application.csproj" />
+      <ProjectReference Include="..\MetworkingGeo.Application\MetworkingGeo.Application.csproj" />
     </ItemGroup>
 
 </Project>

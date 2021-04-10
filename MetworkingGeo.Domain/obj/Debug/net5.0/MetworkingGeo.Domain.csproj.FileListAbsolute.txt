@@ -1,0 +1,12 @@
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/bin/Debug/net5.0/MetworkingGeo.Domain.deps.json
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/bin/Debug/net5.0/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/bin/Debug/net5.0/ref/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/bin/Debug/net5.0/MetworkingGeo.Domain.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.csprojAssemblyReference.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.AssemblyInfoInputs.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.AssemblyInfo.cs
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.csproj.CoreCompileInputs.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/ref/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/obj/Debug/net5.0/MetworkingGeo.Domain.pdb

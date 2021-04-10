@@ -1,0 +1,17 @@
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/MetworkingGeo.Infra.deps.json
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/MetworkingGeo.Infra.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/ref/MetworkingGeo.Infra.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/MetworkingGeo.Infra.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/MetworkingGeo.Domain.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.csprojAssemblyReference.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.AssemblyInfoInputs.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.AssemblyInfo.cs
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.csproj.CoreCompileInputs.cache
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.csproj.CopyComplete
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/ref/MetworkingGeo.Infra.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Infra/obj/Debug/net5.0/MetworkingGeo.Infra.pdb

@@ -242,36 +242,20 @@
           }
         }
       },
-      "MetWorkingGeo.Infra/1.0.0": {
+      "MetworkingGeo.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "MetworkingGeoAPI.Domain": "1.0.0",
-          "MongoDB.Bson": "2.12.2",
-          "MongoDB.Driver": "2.12.2",
-          "MongoDB.Driver.Core": "2.12.2"
+          "MetworkingGeo.Infra": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/MetWorkingGeo.Infra.dll": {}
+          "bin/placeholder/MetworkingGeo.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MetWorkingGeo.Infra.dll": {}
+          "bin/placeholder/MetworkingGeo.Application.dll": {}
         }
       },
-      "MetworkingGeoAPI.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "MetWorkingGeo.Infra": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MetworkingGeoAPI.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MetworkingGeoAPI.Application.dll": {}
-        }
-      },
-      "MetworkingGeoAPI.Domain/1.0.0": {
+      "MetworkingGeo.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -279,10 +263,26 @@
           "MongoDB.Driver": "2.12.2"
         },
         "compile": {
-          "bin/placeholder/MetworkingGeoAPI.Domain.dll": {}
+          "bin/placeholder/MetworkingGeo.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MetworkingGeoAPI.Domain.dll": {}
+          "bin/placeholder/MetworkingGeo.Domain.dll": {}
+        }
+      },
+      "MetworkingGeo.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MetworkingGeo.Domain": "1.0.0",
+          "MongoDB.Bson": "2.12.2",
+          "MongoDB.Driver": "2.12.2",
+          "MongoDB.Driver.Core": "2.12.2"
+        },
+        "compile": {
+          "bin/placeholder/MetworkingGeo.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MetworkingGeo.Infra.dll": {}
         }
       }
     }
@@ -666,25 +666,25 @@
         "version.txt"
       ]
     },
-    "MetWorkingGeo.Infra/1.0.0": {
+    "MetworkingGeo.Application/1.0.0": {
       "type": "project",
-      "path": "../MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj",
-      "msbuildProject": "../MetWorkingGeo.Infra/MetWorkingGeo.Infra.csproj"
+      "path": "../MetworkingGeo.Application/MetworkingGeo.Application.csproj",
+      "msbuildProject": "../MetworkingGeo.Application/MetworkingGeo.Application.csproj"
     },
-    "MetworkingGeoAPI.Application/1.0.0": {
+    "MetworkingGeo.Domain/1.0.0": {
       "type": "project",
-      "path": "../MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj",
-      "msbuildProject": "../MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj"
+      "path": "../MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
+      "msbuildProject": "../MetworkingGeo.Domain/MetworkingGeo.Domain.csproj"
     },
-    "MetworkingGeoAPI.Domain/1.0.0": {
+    "MetworkingGeo.Infra/1.0.0": {
       "type": "project",
-      "path": "../MetworkingGeoAPI.Domain/MetworkingGeoAPI.Domain.csproj",
-      "msbuildProject": "../MetworkingGeoAPI.Domain/MetworkingGeoAPI.Domain.csproj"
+      "path": "../MetworkingGeo.Infra/MetworkingGeo.Infra.csproj",
+      "msbuildProject": "../MetworkingGeo.Infra/MetworkingGeo.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "MetworkingGeoAPI.Application >= 1.0.0",
+      "MetworkingGeo.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -713,8 +713,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj": {
-              "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeoAPI.Application/MetworkingGeoAPI.Application.csproj"
+            "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj": {
+              "projectPath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Application/MetworkingGeo.Application.csproj"
             }
           }
         }

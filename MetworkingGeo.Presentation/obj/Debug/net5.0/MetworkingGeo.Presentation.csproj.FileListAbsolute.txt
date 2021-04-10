@@ -23,10 +23,12 @@
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/runtimes/linux/native/libmongocrypt.so
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/runtimes/osx/native/libmongocrypt.dylib
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/runtimes/win/native/mongocrypt.dll
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetWorkingGeo.Infra.dll
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Domain.dll
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetWorkingGeo.Infra.pdb
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Domain.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Application.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Domain.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Infra.dll
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Application.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Domain.pdb
+/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeo.Infra.pdb
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.csprojAssemblyReference.cache
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.GeneratedMSBuildEditorConfig.editorconfig
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.AssemblyInfoInputs.cache
@@ -43,5 +45,3 @@
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/ref/MetworkingGeo.Presentation.dll
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.pdb
 /home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/obj/Debug/net5.0/MetworkingGeo.Presentation.genruntimeconfig.cache
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Application.dll
-/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Presentation/bin/Debug/net5.0/MetworkingGeoAPI.Application.pdb

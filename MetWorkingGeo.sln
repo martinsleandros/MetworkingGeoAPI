@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetWorkingGeo.WorkerService", "MetWorkingGeo.WorkerService\MetWorkingGeo.WorkerService.csproj", "{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.WorkerService", "MetworkingGeo.WorkerService\MetworkingGeo.WorkerService.csproj", "{5D45C8A6-0AC0-4AD6-856A-4320E7B31D7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetWorkingGeo.Infra", "MetWorkingGeo.Infra\MetWorkingGeo.Infra.csproj", "{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Infra", "MetworkingGeo.Infra\MetworkingGeo.Infra.csproj", "{28CE51CB-FDCB-431B-93AC-CEF1DFF79887}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Presentation", "MetworkingGeo.Presentation\MetworkingGeo.Presentation.csproj", "{D9807331-4874-4529-B3DD-00B52FC60934}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeoAPI.Domain", "MetworkingGeoAPI.Domain\MetworkingGeoAPI.Domain.csproj", "{476CCC08-37FF-49A4-BA7E-3BED058EA21E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Domain", "MetworkingGeo.Domain\MetworkingGeo.Domain.csproj", "{476CCC08-37FF-49A4-BA7E-3BED058EA21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeoAPI.Application", "MetworkingGeoAPI.Application\MetworkingGeoAPI.Application.csproj", "{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetworkingGeo.Application", "MetworkingGeo.Application\MetworkingGeo.Application.csproj", "{C11F1A26-09C5-4B9F-8E24-6F03E77A4659}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "MetworkingGeo.Presentation/1.0.0": {
         "dependencies": {
-          "MetworkingGeoAPI.Application": "1.0.0",
+          "MetworkingGeo.Application": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -516,41 +516,41 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         }
       },
-      "MetWorkingGeo.Infra/1.0.0": {
+      "MetworkingGeo.Application/1.0.0": {
         "dependencies": {
-          "MetworkingGeoAPI.Domain": "1.0.0",
-          "MongoDB.Bson": "2.12.2",
-          "MongoDB.Driver": "2.12.2",
-          "MongoDB.Driver.Core": "2.12.2"
+          "MetworkingGeo.Infra": "1.0.0"
         },
         "runtime": {
-          "MetWorkingGeo.Infra.dll": {}
+          "MetworkingGeo.Application.dll": {}
         },
         "compile": {
-          "MetWorkingGeo.Infra.dll": {}
+          "MetworkingGeo.Application.dll": {}
         }
       },
-      "MetworkingGeoAPI.Application/1.0.0": {
-        "dependencies": {
-          "MetWorkingGeo.Infra": "1.0.0"
-        },
-        "runtime": {
-          "MetworkingGeoAPI.Application.dll": {}
-        },
-        "compile": {
-          "MetworkingGeoAPI.Application.dll": {}
-        }
-      },
-      "MetworkingGeoAPI.Domain/1.0.0": {
+      "MetworkingGeo.Domain/1.0.0": {
         "dependencies": {
           "MongoDB.Bson": "2.12.2",
           "MongoDB.Driver": "2.12.2"
         },
         "runtime": {
-          "MetworkingGeoAPI.Domain.dll": {}
+          "MetworkingGeo.Domain.dll": {}
         },
         "compile": {
-          "MetworkingGeoAPI.Domain.dll": {}
+          "MetworkingGeo.Domain.dll": {}
+        }
+      },
+      "MetworkingGeo.Infra/1.0.0": {
+        "dependencies": {
+          "MetworkingGeo.Domain": "1.0.0",
+          "MongoDB.Bson": "2.12.2",
+          "MongoDB.Driver": "2.12.2",
+          "MongoDB.Driver.Core": "2.12.2"
+        },
+        "runtime": {
+          "MetworkingGeo.Infra.dll": {}
+        },
+        "compile": {
+          "MetworkingGeo.Infra.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2371,17 +2371,17 @@
       "path": "system.text.encoding.codepages/4.5.1",
       "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
     },
-    "MetWorkingGeo.Infra/1.0.0": {
+    "MetworkingGeo.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MetworkingGeoAPI.Application/1.0.0": {
+    "MetworkingGeo.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MetworkingGeoAPI.Domain/1.0.0": {
+    "MetworkingGeo.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

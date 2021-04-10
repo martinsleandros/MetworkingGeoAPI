@@ -20,11 +20,9 @@ namespace MetworkingGeo.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] int page)
+        public async Task<IActionResult> GetAll([FromQuery] int page, [FromQuery] int total)
         {
-            IEnumerable<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
-
-            lLstGeolocalizacao = _geoLocalizacaoService.GetAll(page);
+            var lLstGeolocalizacao = await _geoLocalizacaoService.GetAll(page, total);
 
             return Ok(lLstGeolocalizacao);
         }
@@ -32,9 +30,7 @@ namespace MetworkingGeo.Presentation.Controllers
         [HttpGet("{idUser}", Name = "GetById")]
         public IEnumerable<Geolocalizacao> GetById(Guid idUser)
         {
-            List<Geolocalizacao> lLstGeolocalizacao = new List<Geolocalizacao>();
-
-            lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
+            var lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
 
             return lLstGeolocalizacao;
         }
