@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using MetworkingGeoAPI.Application.Interfaces;
@@ -11,11 +12,13 @@ namespace MetWorkingGeo.WorkerService
     {
         private readonly ILogger<Worker> _logger;
         private readonly IGeoLocalizacaoService _service;
+        private readonly ITimelineService _timelineService;
         private int _offset = 0;
-        public Worker(ILogger<Worker> logger, IGeoLocalizacaoService service)
+        public Worker(ILogger<Worker> logger, IGeoLocalizacaoService service, ITimelineService timelineService)
         {
             _logger = logger;
             _service = service;
+            _timelineService = timelineService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -38,6 +41,20 @@ namespace MetWorkingGeo.WorkerService
                     };
                     
                     var near = await _service.FindNearWorker(location);
+                    var friendsList = near.Select(user => new Friend() {idAmigo = user,}).ToList();
+                    var relationalFriends = await _timelineService.GetRelationalFriends(position.IdUser, friendsList);
+
+                    if (relationalFriends.isOk && relationalFriends.data != null && relationalFriends.data.Count > 0)
+                    {
+                        var timeLineFriends = await _timelineService.GetShowTimeLine(position.IdUser, relationalFriends.data);
+
+                        if (timeLineFriends.isOk && timeLineFriends.data != null &&
+                            timeLineFriends.data.Count > 0)
+                        {
+                            var guids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
+                            await _timelineService.AddToTimeline(position.IdUser, guids);
+                        }
+                    }
                 }
 
                 if (_offset > totalPages)

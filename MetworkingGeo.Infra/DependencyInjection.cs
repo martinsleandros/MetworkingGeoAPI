@@ -9,6 +9,7 @@ namespace MetWorkingGeo.Infra
         public static void AddMongoRepository(this IServiceCollection services)
         {
             services.AddSingleton<IDbGeolocalizacaoMongodb, DbGeolocalizacaoMongodb>();
+            services.AddSingleton<IDbTimelineMongodb, DBTimelineMongodb>();
         }
     }
 }

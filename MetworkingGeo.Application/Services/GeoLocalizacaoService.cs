@@ -41,14 +41,20 @@ namespace MetworkingGeoAPI.Application.Services
 
         public async Task Add(LocationEntry pGeo)
         {
+            var invalidGuid = new Guid("00000000-0000-0000-0000-000000000000");
+            if (pGeo.UserId == invalidGuid)
+            {
+                return;
+            }
+            
             var geo2 = new Geolocalizacao
             {
                 Location = new GeoJsonPoint<GeoJson2DGeographicCoordinates>(
                     new GeoJson2DGeographicCoordinates(pGeo.Longitude, pGeo.Latitude)
                 ),
                 IdUser = pGeo.UserId,
-                Date = pGeo.DateTime,
-                CreatedDate = DateTime.Now,
+                Date = ConvertToUtc(pGeo.DateTime),
+                CreatedDate = DateTime.UtcNow,
             };
             await _mongoContext.GetContext().InsertOneAsync(geo2);
         }
@@ -62,9 +68,7 @@ namespace MetworkingGeoAPI.Application.Services
         {
             FieldDefinition<Geolocalizacao> fieldLocation = "location";
 
-            DateTimeOffset localServerTime = DateTimeOffset.Now;
-            var utcTime = loc.DateTime.ToUniversalTime().Subtract(localServerTime.Offset);
-
+            var utcTime = ConvertToUtc(loc.DateTime);
 
             var timeGreaterMinutes = utcTime.AddMinutes(30);
             var timeLessMinutes = utcTime.AddMinutes(-30);
@@ -101,6 +105,14 @@ namespace MetworkingGeoAPI.Application.Services
                 .DistinctAsync(geolocalizacao => geolocalizacao.IdUser, combineFilters);
 
             return nearUsersCursor.ToList();
+        }
+
+        public DateTime ConvertToUtc(DateTime dateToConvert)
+        {
+            DateTimeOffset localServerTime = DateTimeOffset.Now;
+            var utcTime = dateToConvert.ToUniversalTime().Subtract(localServerTime.Offset);
+
+            return utcTime;
         }
     }
 }

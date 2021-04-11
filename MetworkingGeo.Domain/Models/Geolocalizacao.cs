@@ -10,6 +10,7 @@ namespace MetworkingGeoAPI.Domain.Models
         public Guid Id { get; set; }
         [BsonElement("idUser")]
         public Guid IdUser { get; set; }
+        [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime Date { get; set; }
         public DateTime CreatedDate { get; set; }
 
