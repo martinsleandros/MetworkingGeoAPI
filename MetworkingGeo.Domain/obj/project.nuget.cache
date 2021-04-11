@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "XiurDdTEvCgTgQc7VHlVoeIFQmAip2vckUDShAmdbaoIOASC5QXxmBMiFDm6k3GzHGn9Zf+tgVXairENxmQwvQ==",
+  "dgSpecHash": "uoOip5KODa7u5Z0ulwnbgC0QeajUYwlxCau+pU7JSFkMxAYMwoIx0cD1KksU20GxhdNYWbsMy8yKkyg3ce8MOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leandro\\source\\repos\\MBA\\ENGINEERING SOFTWARE DEVELOPMENT\\MetworkingGeoAPI\\MetworkingGeo.Domain\\MetworkingGeo.Domain.csproj",
+  "projectFilePath": "/home/caio/Documents/MetworkingGeoAPI/MetworkingGeo.Domain/MetworkingGeo.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Leandro\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\mongodb.bson\\2.12.2\\mongodb.bson.2.12.2.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\mongodb.driver\\2.12.2\\mongodb.driver.2.12.2.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\mongodb.driver.core\\2.12.2\\mongodb.driver.core.2.12.2.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.1\\mongodb.libmongocrypt.1.2.1.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\Leandro\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    "/home/caio/.nuget/packages/dnsclient/1.4.0/dnsclient.1.4.0.nupkg.sha512",
+    "/home/caio/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "/home/caio/.nuget/packages/mongodb.bson/2.12.2/mongodb.bson.2.12.2.nupkg.sha512",
+    "/home/caio/.nuget/packages/mongodb.driver/2.12.2/mongodb.driver.2.12.2.nupkg.sha512",
+    "/home/caio/.nuget/packages/mongodb.driver.core/2.12.2/mongodb.driver.core.2.12.2.nupkg.sha512",
+    "/home/caio/.nuget/packages/mongodb.libmongocrypt/1.2.1/mongodb.libmongocrypt.1.2.1.nupkg.sha512",
+    "/home/caio/.nuget/packages/sharpcompress/0.23.0/sharpcompress.0.23.0.nupkg.sha512",
+    "/home/caio/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/home/caio/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/home/caio/.nuget/packages/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

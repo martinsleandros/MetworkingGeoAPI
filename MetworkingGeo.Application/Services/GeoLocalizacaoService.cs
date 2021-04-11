@@ -18,7 +18,7 @@ namespace MetworkingGeoAPI.Application.Services
             _mongoContext = mongodb;
         }
         
-        public async Task<IEnumerable<Geolocalizacao>> GetAll(int page, int total = 100)
+        public async Task<IEnumerable<Geolocalizacao>> GetAll(int page = 0, int total = 20)
         {
             var lLstGeolocalizacao = _mongoContext.GetContext().Find(x => true).Skip(page).Limit(total).ToList();
 
@@ -51,6 +51,11 @@ namespace MetworkingGeoAPI.Application.Services
                 CreatedDate = DateTime.Now,
             };
             await _mongoContext.GetContext().InsertOneAsync(geo2);
+        }
+
+        public async Task RemoveAll()
+        {
+            await _mongoContext.GetContext().DeleteManyAsync(FilterDefinition<Geolocalizacao>.Empty);
         }
         
         public async Task<IEnumerable<Guid>> FindNear(LocationEntry loc)

@@ -26,6 +26,14 @@ namespace MetworkingGeo.Presentation.Controllers
 
             return Ok(lLstGeolocalizacao);
         }
+        
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAll()
+        {
+            await _geoLocalizacaoService.RemoveAll();
+
+            return Ok();
+        }
 
         [HttpGet("{idUser}", Name = "GetById")]
         public IEnumerable<Geolocalizacao> GetById(Guid idUser)

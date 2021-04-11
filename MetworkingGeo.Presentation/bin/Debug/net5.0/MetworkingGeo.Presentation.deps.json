@@ -417,12 +417,12 @@
           "runtimes/win/native/snappy32.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "1.1.1.7"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win/native/snappy64.dll": {
             "rid": "win",
             "assetType": "native",
-            "fileVersion": "1.1.1.7"
+            "fileVersion": "0.0.0.0"
           }
         },
         "compile": {
@@ -519,7 +519,11 @@
         }
       },
       "System.Buffers/4.5.1": {},
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "compile": {
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
