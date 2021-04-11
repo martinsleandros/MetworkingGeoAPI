@@ -13,10 +13,12 @@ namespace MetworkingGeo.Presentation.Controllers
     public class GeolocalizacaoController : ControllerBase
     {
         private readonly IGeoLocalizacaoService _geoLocalizacaoService;
+        private readonly ITimelineService _timelineService;
 
-        public GeolocalizacaoController(IGeoLocalizacaoService geoLocalizacaoService)
+        public GeolocalizacaoController(IGeoLocalizacaoService geoLocalizacaoService, ITimelineService timelineService)
         {
             _geoLocalizacaoService = geoLocalizacaoService;
+            _timelineService = timelineService;
         }
 
         [HttpGet]
@@ -35,13 +37,13 @@ namespace MetworkingGeo.Presentation.Controllers
             return Ok();
         }
 
-        [HttpGet("{idUser}", Name = "GetById")]
-        public IEnumerable<Geolocalizacao> GetById(Guid idUser)
-        {
-            var lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
+        //[HttpGet("{idUser}", Name = "GetById")]
+        //public IEnumerable<Geolocalizacao> GetById(Guid idUser)
+        //{
+        //    var lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
 
-            return lLstGeolocalizacao;
-        }
+        //    return lLstGeolocalizacao;
+        //}
 
         [HttpPost]
         public async void Post([FromBody]LocationEntry pGeo)
@@ -53,6 +55,13 @@ namespace MetworkingGeo.Presentation.Controllers
         public async Task<IActionResult> GetNear([FromBody]LocationEntry pGeo)
         {
             var result = await _geoLocalizacaoService.FindNear(pGeo);
+            return Ok(result);
+        }
+
+        [HttpGet("/timeline/{idUser}")]
+        public async Task<IActionResult> GetTimelineUsers(Guid idUser)
+        {
+            var result = await _timelineService.GetTimelineUsers(idUser);
             return Ok(result);
         }
     }

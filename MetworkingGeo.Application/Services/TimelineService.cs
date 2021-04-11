@@ -27,13 +27,22 @@ namespace MetworkingGeoAPI.Application.Services
             _httpClient = httpClient;
         }
 
-        public async Task<List<Guid>> GetTimelineUsers(Guid idUser)
+        public async Task<List<Friend>> GetTimelineUsers(Guid idUser)
         {
-            List<GeolocalizacaoResponse> responseList = new();
+            List<Friend> responseList = new();
 
-            var users = await _mongoContext.GetContext().FindAsync(x => x.IdUser == idUser);
-            var user = await users.FirstAsync();
-            return user.UsersTimeLine;
+            var users = await _mongoContext.GetContext().Find(x => x.IdUser == idUser).FirstOrDefaultAsync();
+
+            if (users != null)
+            {
+                foreach (var user in users.UsersTimeLine)
+                {
+                    var friend = new Friend() { idAmigo = user};
+                    responseList.Add(friend);
+                }
+            }
+
+            return responseList;
         }
 
         public async Task AddToTimeline(Guid user, List<Guid> friends)
@@ -52,7 +61,7 @@ namespace MetworkingGeoAPI.Application.Services
             }
 
             var needsReplace = false;
-            
+
             foreach (var newFriend in friends)
             {
                 var any = users.UsersTimeLine.Any(p => p == newFriend);
@@ -66,7 +75,7 @@ namespace MetworkingGeoAPI.Application.Services
 
             if (needsReplace)
             {
-                await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == user, users);   
+                await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == user, users);
             }
         }
 
@@ -86,13 +95,14 @@ namespace MetworkingGeoAPI.Application.Services
                 data = null,
                 errors = null
             };
-            
+
             var readAsStringAsync = await httpResponse.Content.ReadAsStringAsync();
             var responseFriendComparison = JsonSerializer.Deserialize<ResponseFriendComparison>(readAsStringAsync);
 
             return responseFriendComparison;
         }
 
+        //[Produces("application/json")]
         public async Task<ResponseFriendComparison> GetShowTimeLine(Guid userId, List<Friend> usersToCompare)
         {
             var listFriends = new RequestFriend()
@@ -102,14 +112,14 @@ namespace MetworkingGeoAPI.Application.Services
             var serialized = JsonSerializer.Serialize(listFriends);
             var body = new StringContent(serialized, Encoding.UTF8, "application/json");
             var httpResponse = await _httpClient.PostAsync($"http://localhost:8082/api/v1/Match/showTimeline/{userId}", body);
-            
+
             if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendComparison()
             {
                 isOk = false,
                 data = null,
                 errors = null
             };
-            
+
             var readAsStringAsync = await httpResponse.Content.ReadAsStringAsync();
             var responseFriendComparison = JsonSerializer.Deserialize<ResponseFriendComparison>(readAsStringAsync);
 
