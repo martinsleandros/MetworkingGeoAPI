@@ -138,6 +138,8 @@ namespace MetworkingGeoAPI.Application.Services
                     firstUserResponse.UsersTimeLine.Remove(secondUser);
                 }
             }
+
+            await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == firstUser, firstUserResponse);
             
             var secondUserResponse = await _mongoContext.GetContext().Find(timeline => timeline.IdUser == secondUser).FirstOrDefaultAsync();
 
@@ -149,6 +151,8 @@ namespace MetworkingGeoAPI.Application.Services
                     secondUserResponse.UsersTimeLine.Remove(firstUser);
                 }
             }
+            
+            await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == secondUser, secondUserResponse);
         }
 
     }
