@@ -64,5 +64,13 @@ namespace MetworkingGeo.Presentation.Controllers
             var result = await _timelineService.GetTimelineUsers(idUser);
             return Ok(result);
         }
+
+        [HttpDelete("/{firstUser}/{secondUser}")]
+        public async Task<IActionResult> RemoveFromTimeline([FromRoute] Guid firstUser, [FromRoute] Guid secondUser)
+        {
+            await _timelineService.RemoveFromTimeline(firstUser, secondUser);
+
+            return Ok();
+        }
     }
 }

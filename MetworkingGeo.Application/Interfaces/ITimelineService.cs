@@ -11,5 +11,6 @@ namespace MetworkingGeoAPI.Application.Interfaces
         public Task<ResponseFriendComparison> GetRelationalFriends(Guid userId, List<Friend> usersToCompare);
         public Task<ResponseFriendComparison> GetShowTimeLine(Guid userId, List<Friend> usersToCompare);
         public Task AddToTimeline(Guid user, List<Guid> friends);
+        public Task RemoveFromTimeline(Guid firstUser, Guid secondUser);
     }
 }

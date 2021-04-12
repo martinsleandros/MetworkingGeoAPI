@@ -126,5 +126,30 @@ namespace MetworkingGeoAPI.Application.Services
             return responseFriendComparison;
         }
 
+        public async Task RemoveFromTimeline(Guid firstUser, Guid secondUser)
+        {
+            var firstUserResponse = await _mongoContext.GetContext().Find(timeline => timeline.IdUser == firstUser).FirstOrDefaultAsync();
+
+            if (firstUserResponse != null)
+            {
+                var hasUser = firstUserResponse.UsersTimeLine.Any(p => p == secondUser);
+                if (hasUser)
+                {
+                    firstUserResponse.UsersTimeLine.Remove(secondUser);
+                }
+            }
+            
+            var secondUserResponse = await _mongoContext.GetContext().Find(timeline => timeline.IdUser == secondUser).FirstOrDefaultAsync();
+
+            if (secondUserResponse != null)
+            {
+                var hasUser = secondUserResponse.UsersTimeLine.Any(p => p == firstUser);
+                if (hasUser)
+                {
+                    secondUserResponse.UsersTimeLine.Remove(firstUser);
+                }
+            }
+        }
+
     }
 }
