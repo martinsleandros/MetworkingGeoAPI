@@ -79,15 +79,13 @@ namespace MetworkingGeoAPI.Application.Services
             }
         }
 
-        public async Task<ResponseFriendComparison> GetRelationalFriends(Guid userId, List<Friend> usersToCompare)
+        public async Task<ResponseFriendComparison> GetRelationalFriends(Guid userId, List<Guid> usersToCompare)
         {
-            var listFriends = new RequestFriend()
-            {
-                IdAmigos = usersToCompare,
-            };
+            var listFriends = new RequestFriend {IdAmigos = usersToCompare};
+
             var serialized = JsonSerializer.Serialize(listFriends);
             var body = new StringContent(serialized, Encoding.UTF8, "application/json");
-            var httpResponse = await _httpClient.PostAsync($"http://localhost:8081/api/v1/UserInterest/interestCompare/{userId}", body);
+            var httpResponse = await _httpClient.PostAsync($"http://metworking-env.eba-drmcderk.us-east-1.elasticbeanstalk.com:81/api/v1/UserInterest/interestCompare/{userId}", body);
 
             if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendComparison()
             {
@@ -103,17 +101,13 @@ namespace MetworkingGeoAPI.Application.Services
         }
 
         //[Produces("application/json")]
-        public async Task<ResponseFriendComparison> GetShowTimeLine(Guid userId, List<Friend> usersToCompare)
+        public async Task<ResponseFriendMatchComparison> GetShowTimeLine(Guid userId, RequestMatchFriend usersToCompare)
         {
-            var listFriends = new RequestFriend()
-            {
-                IdAmigos = usersToCompare,
-            };
-            var serialized = JsonSerializer.Serialize(listFriends);
+            var serialized = JsonSerializer.Serialize(usersToCompare);
             var body = new StringContent(serialized, Encoding.UTF8, "application/json");
-            var httpResponse = await _httpClient.PostAsync($"http://localhost:8082/api/v1/Match/showTimeline/{userId}", body);
+            var httpResponse = await _httpClient.PostAsync($"http://metworking-env.eba-drmcderk.us-east-1.elasticbeanstalk.com:82/api/v1/Match/showTimeline/{userId}", body);
 
-            if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendComparison()
+            if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendMatchComparison()
             {
                 isOk = false,
                 data = null,
@@ -121,7 +115,7 @@ namespace MetworkingGeoAPI.Application.Services
             };
 
             var readAsStringAsync = await httpResponse.Content.ReadAsStringAsync();
-            var responseFriendComparison = JsonSerializer.Deserialize<ResponseFriendComparison>(readAsStringAsync);
+            var responseFriendComparison = JsonSerializer.Deserialize<ResponseFriendMatchComparison>(readAsStringAsync);
 
             return responseFriendComparison;
         }
@@ -154,6 +148,5 @@ namespace MetworkingGeoAPI.Application.Services
             
             await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == secondUser, secondUserResponse);
         }
-
     }
 }

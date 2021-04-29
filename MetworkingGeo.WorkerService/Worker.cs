@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -41,17 +43,22 @@ namespace MetWorkingGeo.WorkerService
                     };
                     
                     var near = await _service.FindNearWorker(location);
+                    if (!near.Any()) continue;
                     var friendsList = near.Select(user => new Friend() {idAmigo = user,}).ToList();
-                    var relationalFriends = await _timelineService.GetRelationalFriends(position.IdUser, friendsList);
+                    var relationalFriends = await _timelineService.GetRelationalFriends(position.IdUser, near.ToList());
 
-                    if (relationalFriends.isOk && relationalFriends.data != null && relationalFriends.data.Count > 0)
+                    if (relationalFriends.isOk && relationalFriends.data != null && relationalFriends.data.idAmigos.Count > 0)
                     {
-                        var timeLineFriends = await _timelineService.GetShowTimeLine(position.IdUser, relationalFriends.data);
+                        var friends = relationalFriends.data.idAmigos.Select(requestFriend => new Friend() {idAmigo = requestFriend}).ToList();
+                        var request = new RequestMatchFriend {IdAmigos = friends};
+
+                        var timeLineFriends = await _timelineService.GetShowTimeLine(position.IdUser, request);
 
                         if (timeLineFriends.isOk && timeLineFriends.data != null &&
                             timeLineFriends.data.Count > 0)
                         {
                             var guids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
+                            
                             await _timelineService.AddToTimeline(position.IdUser, guids);
                         }
                     }

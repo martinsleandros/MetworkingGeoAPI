@@ -22,9 +22,10 @@ namespace MetworkingGeo.Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddHealthChecks();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "MetworkingGeo.Presentation", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "MetworkingGeo", Version = "v1"});
             });
             services.AddServices();
             services.AddMongoRepository();
@@ -39,7 +40,7 @@ namespace MetworkingGeo.Presentation
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetworkingGeo.Presentation v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetworkingGeo v1"));
 
             //app.UseHttpsRedirection();
 
@@ -47,7 +48,11 @@ namespace MetworkingGeo.Presentation
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapHealthChecks("health");
+            });
         }
     }
 }

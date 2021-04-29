@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using MetWorkingGeo.Infra.Interfaces;
 using MetworkingGeoAPI.Application.Interfaces;
@@ -12,10 +13,12 @@ namespace MetworkingGeoAPI.Application.Services
     public class GeoLocalizacaoService : IGeoLocalizacaoService
     {
         private readonly IDbGeolocalizacaoMongodb _mongoContext;
+        private readonly ITimelineService _timelineService;
 
-        public GeoLocalizacaoService(IDbGeolocalizacaoMongodb mongodb)
+        public GeoLocalizacaoService(IDbGeolocalizacaoMongodb mongodb, ITimelineService timelineService)
         {
             _mongoContext = mongodb;
+            _timelineService = timelineService;
         }
         
         public async Task<IEnumerable<Geolocalizacao>> GetAll(int page = 0, int total = 20)
@@ -57,6 +60,7 @@ namespace MetworkingGeoAPI.Application.Services
                 CreatedDate = DateTime.UtcNow,
             };
             await _mongoContext.GetContext().InsertOneAsync(geo2);
+            await CheckIfHasRelationalAndAdd(geo2);
         }
 
         public async Task RemoveAll()
@@ -86,7 +90,7 @@ namespace MetworkingGeoAPI.Application.Services
             return nearUsersCursor.ToList();
         }
         
-        public async Task<IEnumerable<Guid>> FindNearWorker(LocationEntry loc)
+        public async Task<List<Guid>> FindNearWorker(LocationEntry loc)
         {
             FieldDefinition<Geolocalizacao> fieldLocation = "location";
 
@@ -113,6 +117,38 @@ namespace MetworkingGeoAPI.Application.Services
             var utcTime = dateToConvert.ToUniversalTime().Subtract(localServerTime.Offset);
 
             return utcTime;
+        }
+        
+        private async Task CheckIfHasRelationalAndAdd(Geolocalizacao position)
+        {
+            var location = new LocationEntry()
+            {
+                Latitude = position.Location.Coordinates.Latitude,
+                Longitude = position.Location.Coordinates.Longitude,
+                DateTime = position.Date,
+                UserId = position.IdUser
+            };
+            
+            var near = await FindNearWorker(location);
+            if (!near.Any()) return;
+            var friendsList = near.Select(user => new Friend() {idAmigo = user,}).ToList();
+            var relationalFriends = await _timelineService.GetRelationalFriends(position.IdUser, near.ToList());
+
+            if (relationalFriends.isOk && relationalFriends.data != null && relationalFriends.data.idAmigos.Count > 0)
+            {
+                var friends = relationalFriends.data.idAmigos.Select(requestFriend => new Friend() {idAmigo = requestFriend}).ToList();
+                var request = new RequestMatchFriend {IdAmigos = friends};
+
+                var timeLineFriends = await _timelineService.GetShowTimeLine(position.IdUser, request);
+
+                if (timeLineFriends.isOk && timeLineFriends.data != null &&
+                    timeLineFriends.data.Count > 0)
+                {
+                    var guids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
+                            
+                    await _timelineService.AddToTimeline(position.IdUser, guids);
+                }
+            }
         }
     }
 }
