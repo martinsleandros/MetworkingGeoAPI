@@ -37,14 +37,6 @@ namespace MetworkingGeo.Presentation.Controllers
             return Ok();
         }
 
-        //[HttpGet("{idUser}", Name = "GetById")]
-        //public IEnumerable<Geolocalizacao> GetById(Guid idUser)
-        //{
-        //    var lLstGeolocalizacao = _geoLocalizacaoService.GetById(idUser).ToList();
-
-        //    return lLstGeolocalizacao;
-        //}
-
         [HttpPost]
         public async void Post([FromBody]LocationEntry pGeo)
         {

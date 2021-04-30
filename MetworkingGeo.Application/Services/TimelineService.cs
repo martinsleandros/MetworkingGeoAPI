@@ -100,7 +100,6 @@ namespace MetworkingGeoAPI.Application.Services
             return responseFriendComparison;
         }
 
-        //[Produces("application/json")]
         public async Task<ResponseFriendMatchComparison> GetShowTimeLine(Guid userId, RequestMatchFriend usersToCompare)
         {
             var serialized = JsonSerializer.Serialize(usersToCompare);
