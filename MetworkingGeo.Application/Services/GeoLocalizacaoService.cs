@@ -93,8 +93,7 @@ namespace MetworkingGeoAPI.Application.Services
         public async Task<List<Guid>> FindNearWorker(LocationEntry loc)
         {
             FieldDefinition<Geolocalizacao> fieldLocation = "location";
-
-
+            
             var timeGreaterMinutes = loc.DateTime.AddMinutes(30);
             var timeLessMinutes = loc.DateTime.AddMinutes(-30);
 
@@ -131,7 +130,7 @@ namespace MetworkingGeoAPI.Application.Services
             
             var near = await FindNearWorker(location);
             if (!near.Any()) return;
-            var friendsList = near.Select(user => new Friend() {idAmigo = user,}).ToList();
+            
             var relationalFriends = await _timelineService.GetRelationalFriends(position.IdUser, near.ToList());
 
             if (relationalFriends.isOk && relationalFriends.data != null && relationalFriends.data.idAmigos.Count > 0)
@@ -144,9 +143,13 @@ namespace MetworkingGeoAPI.Application.Services
                 if (timeLineFriends.isOk && timeLineFriends.data != null &&
                     timeLineFriends.data.Count > 0)
                 {
-                    var guids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
-                            
-                    await _timelineService.AddToTimeline(position.IdUser, guids);
+                    var friendsGuids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
+
+                    foreach (var friend in friendsGuids)
+                    {
+                        await _timelineService.AddToTimeline(position.IdUser, friend);
+                        await _timelineService.AddToTimeline(friend, position.IdUser);
+                    }
                 }
             }
         }

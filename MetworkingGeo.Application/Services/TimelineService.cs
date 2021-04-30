@@ -45,7 +45,7 @@ namespace MetworkingGeoAPI.Application.Services
             return responseList;
         }
 
-        public async Task AddToTimeline(Guid user, List<Guid> friends)
+        public async Task AddToTimeline(Guid user, Guid friend)
         {
             var users = await _mongoContext.GetContext().Find(timeline => timeline.IdUser == user).FirstOrDefaultAsync();
 
@@ -54,27 +54,17 @@ namespace MetworkingGeoAPI.Application.Services
                 var newTimeLine = new Timeline()
                 {
                     IdUser = user,
-                    UsersTimeLine = friends,
+                    UsersTimeLine = new List<Guid>{friend},
                 };
                 await _mongoContext.GetContext().InsertOneAsync(newTimeLine);
                 return;
             }
+            
+            var any = users.UsersTimeLine.Any(p => p == friend);
 
-            var needsReplace = false;
-
-            foreach (var newFriend in friends)
+            if (!any)
             {
-                var any = users.UsersTimeLine.Any(p => p == newFriend);
-
-                if (!any)
-                {
-                    needsReplace = true;
-                    users.UsersTimeLine.Add(newFriend);
-                }
-            }
-
-            if (needsReplace)
-            {
+                users.UsersTimeLine.Add(friend);
                 await _mongoContext.GetContext().ReplaceOneAsync(x => x.IdUser == user, users);
             }
         }
