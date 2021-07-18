@@ -58,8 +58,11 @@ namespace MetWorkingGeo.WorkerService
                             timeLineFriends.data.Count > 0)
                         {
                             var guids = timeLineFriends.data.Select(friend => friend.idAmigo).ToList();
-                            
-                            await _timelineService.AddToTimeline(position.IdUser, guids);
+
+                            foreach (var item in guids)
+                            {
+                                await _timelineService.AddToTimeline(position.IdUser, item);
+                            }
                         }
                     }
                 }

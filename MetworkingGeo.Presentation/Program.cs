@@ -14,7 +14,7 @@ namespace MetworkingGeo.Presentation
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-        .AddServiceDiscovery(optionsAction => optionsAction.UseEureka())
+        //.AddServiceDiscovery(optionsAction => optionsAction.UseEureka())
         .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }
 }
