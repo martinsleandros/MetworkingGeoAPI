@@ -75,7 +75,7 @@ namespace MetworkingGeoAPI.Application.Services
 
             var serialized = JsonSerializer.Serialize(listFriends);
             var body = new StringContent(serialized, Encoding.UTF8, "application/json");
-            var httpResponse = await _httpClient.PostAsync($"http://metworking-env.eba-drmcderk.us-east-1.elasticbeanstalk.com:81/api/v1/UserInterest/interestCompare/{userId}", body);
+            var httpResponse = await _httpClient.PostAsync($"http://localhost:5000/api/v1/UserInterest/interestCompare/{userId}", body);
 
             if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendComparison()
             {
@@ -94,7 +94,7 @@ namespace MetworkingGeoAPI.Application.Services
         {
             var serialized = JsonSerializer.Serialize(usersToCompare);
             var body = new StringContent(serialized, Encoding.UTF8, "application/json");
-            var httpResponse = await _httpClient.PostAsync($"http://metworking-env.eba-drmcderk.us-east-1.elasticbeanstalk.com:82/api/v1/Match/showTimeline/{userId}", body);
+            var httpResponse = await _httpClient.PostAsync($"http://localhost:5002/api/v1/Match/showTimeline/{userId}", body);
 
             if (!httpResponse.IsSuccessStatusCode) return new ResponseFriendMatchComparison()
             {

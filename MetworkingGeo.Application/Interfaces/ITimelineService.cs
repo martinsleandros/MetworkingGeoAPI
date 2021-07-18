@@ -10,7 +10,7 @@ namespace MetworkingGeoAPI.Application.Interfaces
         public Task<List<Friend>> GetTimelineUsers(Guid idUser);
         public Task<ResponseFriendComparison> GetRelationalFriends(Guid userId, List<Guid> usersToCompare);
         public Task<ResponseFriendMatchComparison> GetShowTimeLine(Guid userId, RequestMatchFriend usersToCompare);
-        public async Task AddToTimeline(Guid user, Guid friend);
+        public Task AddToTimeline(Guid user, Guid friend);
         public Task RemoveFromTimeline(Guid firstUser, Guid secondUser);
     }
 }
